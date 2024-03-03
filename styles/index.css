@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "TheMixSemiBold-Plain", sans-serif;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 1;
+}
+
+.sticky-header {
+  background-color: rgba(0, 0, 0, 0.674);
+}
+
+.header-logo {
+  width: 92px;
+}
+
+.header-links {
+}
+
+.nav-links {
+  list-style: none;
+  font-size: 14px;
+}
+
+.nav-links > li > a {
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  padding: 8px 15px;
+  border-radius: 3px;
+}
+
+.nav-links > li > a:hover {
+  background-color: rgba(240, 255, 255, 0.377);
+}
+
+.header-btn {
+  padding: 10px 35px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: "TheMixSemiBold-Plain", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.menu-bar {
+  display: none;
+  height: 35px;
+  width: 35px;
+}
+
+.hero {
+  position: relative;
+  height: 160vh;
+}
+
+.hero > .image {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+  object-fit: cover;
+}
+
+.hero-info {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+.hero-info-big {
+  font-size: 48px;
+}
+
+@media (max-width: 1030px) {
+  .header-links {
+    display: none !important;
+  }
+  .menu-bar {
+    display: block;
+  }
+}
+
+@media (max-width: 770px) {
+  .hero {
+    height: 75vh;
+  }
+  .hero-info {
+    font-size: 26px;
+  }
+}
+
+.foundations-section {
+  padding-top: 50px;
+  background-color: #ececec;
+  padding-bottom: 70px;
+}
+
+.foundations-section h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.foundations {
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+
+.foundation {
+  background-color: white;
+  border-radius: 7px;
+  line-height: 1.8rem;
+  flex-grow: 1;
+  min-width: 200px;
+  max-width: 350px;
+  height: 500px;
+  width: 220px;
+  padding: 25px;
+}
+
+.foundation:nth-child(1):hover {
+  background-color: #2eaee11d;
+}
+
+.foundation:nth-child(2):hover {
+  background-color: #2edee11d;
+}
+
+.foundation:nth-child(3):hover {
+  background-color: #2ee1991d;
+}
+
+.foundation:nth-child(4):hover {
+  background-color: #c9e12e1d;
+}
+
+.foundation:nth-child(5):hover {
+  background-color: #e12ea21d;
+}
+
+.foundation > img {
+  height: 75px;
+  width: 100%;
+}
+
+.foundation > h4 {
+  font-weight: 700;
+}
+
+.foundation > p {
+  font-size: 16px;
+}
