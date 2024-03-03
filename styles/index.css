@@ -33,9 +33,6 @@ img {
   width: 92px;
 }
 
-.header-links {
-}
-
 .nav-links {
   list-style: none;
   font-size: 14px;
@@ -64,6 +61,23 @@ img {
   display: none;
   height: 35px;
   width: 35px;
+}
+
+.scroll-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  padding: 7px 9px;
+  border-radius: 3px;
+}
+
+.scroll-top:hover {
+  background-color: #555;
+}
+
+.scroll-top > img {
+  width: 15px;
 }
 
 .hero {
@@ -109,7 +123,7 @@ img {
 }
 
 .foundations-section {
-  padding-top: 50px;
+  padding: 50px 10px 0 10px;
   background-color: #ececec;
   padding-bottom: 70px;
 }
