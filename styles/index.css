@@ -171,3 +171,21 @@ img {
 .foundation > p {
   font-size: 16px;
 }
+
+.explore {
+  background-image: url("../assets/explore-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+
+.explore > h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.explore > iframe {
+  height: 300px;
+  width: 500px;
+}
