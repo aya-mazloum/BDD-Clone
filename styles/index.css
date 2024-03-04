@@ -36,6 +36,7 @@ img {
 .nav-links {
   list-style: none;
   font-size: 14px;
+  position: relative;
 }
 
 .nav-links > li > a {
@@ -47,6 +48,38 @@ img {
 
 .nav-links > li > a:hover {
   background-color: rgba(240, 255, 255, 0.377);
+}
+
+.nav-links > li > a > img {
+  width: 12px;
+  margin-left: 5px;
+}
+
+.nav-links ul {
+  display: none;
+  position: absolute;
+  top: 45px;
+  background-color: white;
+  border-radius: 3px;
+  padding: 7px;
+}
+
+.inner-nav-links > li > a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 15px;
+  font-size: 11px;
+  border-radius: 3px;
+  letter-spacing: normal;
+  width: 100%;
+}
+
+.inner-nav-links > li > a:hover {
+  background-color: rgba(190, 193, 193, 0.384);
+}
+
+.nav-links > li > a:hover + .inner-nav-links {
+  display: block;
 }
 
 .header-btn {
@@ -102,24 +135,6 @@ img {
 
 .hero-info-big {
   font-size: 48px;
-}
-
-@media (max-width: 1030px) {
-  .header-links {
-    display: none !important;
-  }
-  .menu-bar {
-    display: block;
-  }
-}
-
-@media (max-width: 770px) {
-  .hero {
-    height: 75vh;
-  }
-  .hero-info {
-    font-size: 26px;
-  }
 }
 
 .foundations-section {
@@ -187,7 +202,7 @@ img {
 }
 
 .explore {
-  background-image: url("../assets/explore-bg.jpg");
+  background-image: url("../assets/explore-bg.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding-top: 35px;
@@ -197,9 +212,106 @@ img {
 .explore > h1 {
   font-size: 28px;
   margin-bottom: 20px;
+  font-weight: 900;
 }
 
 .explore > iframe {
   height: 300px;
   width: 500px;
+}
+
+.community-section {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.community-section > h1 {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+.community-flex {
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.community-flex > img {
+  width: 450px;
+}
+
+.community-item {
+  background-image: url("../assets/community-bg.jpeg");
+  background-repeat: no-repeat;
+  position: relative;
+  height: 560px;
+  width: 180px;
+  border-radius: 5px;
+  padding: 35px;
+  box-shadow: -5px 0 6px -3px #b4b4b422;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.community-item:hover {
+  transform: translateY(-7px);
+  box-shadow: -5px 0 6px 0px #b4b4b422;
+}
+
+.community-item > h5 {
+  font-size: 20px;
+}
+
+.community-item > p > img {
+  width: 10px;
+  padding-top: 8px;
+  margin-right: 7px;
+}
+
+.community-item > button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 30px;
+  border-radius: 25px;
+}
+
+.community-section > h3 {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.download {
+  width: 200px;
+  gap: 40px;
+}
+
+@media (max-width: 1030px) {
+  .header-links {
+    display: none;
+  }
+  .menu-bar {
+    display: block;
+  }
+  .menu-bar:focus + .header-links {
+    display: block;
+    flex-direction: column;
+  }
+  .community-flex > img {
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .hero {
+    height: 75vh;
+  }
+  .hero-info {
+    font-size: 26px;
+  }
+
+  .explore > iframe {
+    height: 150px;
+    width: 250px;
+  }
 }
