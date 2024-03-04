@@ -15,6 +15,12 @@ img {
   object-fit: contain;
 }
 
+h1 {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -209,12 +215,6 @@ img {
   padding-bottom: 50px;
 }
 
-.explore > h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  font-weight: 900;
-}
-
 .explore > iframe {
   height: 300px;
   width: 500px;
@@ -225,11 +225,6 @@ img {
   padding-bottom: 60px;
 }
 
-.community-section > h1 {
-  font-size: 28px;
-  font-weight: 900;
-  margin-bottom: 30px;
-}
 .community-flex {
   gap: 10px;
   flex-wrap: wrap;
@@ -300,6 +295,32 @@ img {
   .community-flex > img {
     display: none;
   }
+}
+
+.hub {
+  background-image: url("../assets/parallax-light.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 35px;
+  padding-bottom: 90px;
+}
+
+.hub > h1 {
+  margin-bottom: 20px;
+}
+
+.hub-flex {
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hub-item > img {
+  width: 85px;
+}
+
+.hub-item h1 {
+  margin-top: -5px;
+  margin-bottom: 15px;
 }
 
 @media (max-width: 770px) {
