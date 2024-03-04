@@ -305,8 +305,12 @@ h1 {
 }
 
 .hub-flex {
-  gap: 40px;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+.hub-item {
+  width: 260px;
 }
 
 .hub-item > img {
@@ -316,6 +320,73 @@ h1 {
 .hub-item h1 {
   margin-top: -5px;
   margin-bottom: 15px;
+}
+
+.hub-item h3 {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+
+.hub-flex > .hub-item:nth-child(1) h1 {
+  color: #238f86;
+}
+
+.hub-flex > .hub-item:nth-child(2) h1 {
+  color: #c2249a;
+}
+
+.hub-flex > .hub-item:nth-child(3) h1 {
+  color: #1a87c6;
+}
+
+.hub-flex > .hub-item:nth-child(4) h1 {
+  color: #0f9152;
+}
+
+.trend-section {
+  background-image: url("../assets/trending-bg.jpeg");
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  gap: 15px;
+  padding-bottom: 40px;
+}
+
+.trend-section > h1 {
+  margin-bottom: 0;
+}
+
+.trend-items {
+  gap: 30px;
+}
+
+.trend-item {
+  justify-content: start;
+  height: fit-content;
+  width: 350px;
+  background-color: white;
+  padding-bottom: 15px;
+}
+
+.trend-item > h3 {
+  padding: 20px;
+  border-bottom: #c3c3c3 solid 1px;
+}
+
+.trend-item > p {
+  padding: 0 15px;
+}
+
+.circles {
+  gap: 10px;
+}
+
+.circles > img {
+  width: 7px;
+}
+
+.trend-section > button {
+  padding: 12px 30px;
+  border-radius: 25px;
 }
 
 @media (max-width: 770px) {
