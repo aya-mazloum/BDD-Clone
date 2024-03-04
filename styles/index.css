@@ -389,6 +389,16 @@ h1 {
   border-radius: 25px;
 }
 
+.community-words {
+  gap: 10px;
+  padding: 50px;
+}
+
+.community-words > iframe {
+  width: 250px;
+  height: 190px;
+}
+
 @media (max-width: 770px) {
   .hero {
     height: 75vh;
